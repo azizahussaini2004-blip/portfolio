@@ -1,107 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio | Home</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style2.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aziza Hussaini | Front-End Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
+<header>
+  <div class="navbar">
+    <div class="logo"><span class="logo-icon">&lt;/&gt;</span> Aziza Hussaini</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+  </div>
+</header>
 
-            <h2 class="logo">Portfolio</h2>
+<main>
 
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="badge">👋 Hello, I'm</span>
+      <h1>Aziza <span>Hussaini</span></h1>
+      <h3>Front-End Web Developer</h3>
+      <p>I am passionate about creating beautiful, responsive, and user-friendly websites using HTML, CSS and JavaScript. Welcome to my personal portfolio.</p>
+      <a href="cv2.pdf" class="btn" download><i class="fa-solid fa-download"></i> Download CV</a>
+      <div class="social-row">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/ghazaldominion" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:azizahussaini2004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <span class="doodle doodle-1">Dream<br>Code<br>Create ♡</span>
+      <div class="frame">
+        <img src="my img.jpeg" alt="Aziza Hussaini">
+      </div>
+      <span class="doodle doodle-2">Better<br>Every<br>Day ♡</span>
+    </div>
+  </section>
 
-        </nav>
-    </header>
+  <div class="about-preview">
+    <span class="eyebrow">About Me</span>
+    <h2>Who <span style="color:var(--accent)">Am I?</span></h2>
+    <p>I'm a motivated Computer Science student who loves turning ideas into beautiful and functional websites. My goal is to grow in the tech world, keep learning and create something meaningful.</p>
+  </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
+  <!-- ABOUT -->
+  <section class="about-page" id="about">
+    <span class="eyebrow">Get to know me</span>
+    <h1>About Me</h1>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="my img.jpeg" alt="Aziza Hussaini">
+      </div>
+      <div class="about-content">
+        <h2>Aziza Hussaini</h2>
+        <p>I am a Computer Science student specializing in Software Development and Artificial Intelligence. I enjoy building modern web applications and continuously improving my programming and problem-solving skills.</p>
 
-        <div class="hero-text">
-
-            <h1>Hello, I'm <span>Aziza Hussaini</span></h1>
-
-            <h3>Front-End Web Developer</h3>
-
-            <p>
-                I am passionate about creating beautiful, responsive,
-                and user-friendly websites using HTML and CSS.
-                Welcome to my personal portfolio website.
-            </p>
-
-            <a href="cv2.pdf" class="btn">
-                <i class="fa-solid fa-download"></i>
-                Download CV
-            </a>
-
+        <div class="education">
+          <h3>Education</h3>
+          <table>
+            <tr><th>Degree</th><th>Institute</th><th>Year</th></tr>
+            <tr><td>Bachelor of Computer Science</td><td>AGIO Online University</td><td>2025 - Present</td></tr>
+            <tr><td>High School Diploma</td><td>Jebreel Girls' High School</td><td>2022</td></tr>
+          </table>
         </div>
 
-        <div class="hero-image">
-            <img src="my img.jpeg" alt="Profile Picture">
+        <div class="experience">
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>STEM &amp; Language Instructor</strong> — TOEFL Hub Academy</li>
+            <li><strong>English Language Instructor</strong> — Asia Academy</li>
+          </ul>
         </div>
 
-    </section>
-
-    <!-- Short About -->
-    <section class="about-preview">
-
-        <h2>Who Am I?</h2>
-
-        <p>
-            I am a motivated web development student who enjoys learning
-            new technologies and building modern websites. My goal is to
-            become a professional front-end developer.
-        </p>
-
-    </section>
-
+        <div class="goals">
+          <h3>Career Goal</h3>
+          <p>My goal is to become a professional Software Engineer, continue my education through an international scholarship, master Artificial Intelligence technologies, and develop innovative software that creates a positive impact.</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <span class="eyebrow">What I know</span>
+    <h2>My Skills</h2>
+    <div class="skill-container">
+      <div class="skill-card"><i class="fa-brands fa-html5"></i><h3>HTML5</h3><p>Semantic, accessible markup</p></div>
+      <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3><p>Modern, responsive styling</p></div>
+      <div class="skill-card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Interactive experiences</p></div>
+      <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Logic &amp; problem solving</p></div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <span class="eyebrow">My Work</span>
+    <h2>My Projects</h2>
+    <p>Here are some of my web development projects.</p>
+    <div class="project-gallery">
+      <div class="project-card"><img src="weatherapp.jpg" alt="Weather App"><div class="project-info"><h3>Weather App</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="to do list.jpg" alt="To Do List"><div class="project-info"><h3>To-Do List</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="studentsystem.jpg" alt="Student System"><div class="project-info"><h3>Student System</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="login2.jpg" alt="Login Page"><div class="project-info"><h3>Login Page</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="computer.jpg" alt="Computer"><div class="project-info"><h3>Computer Page</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="coloure.jpg" alt="Colour Project"><div class="project-info"><h3>Colour App</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="flower.jpg" alt="Flower"><div class="project-info"><h3>Flower Page</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="gallary.jpg" alt="Gallery"><div class="project-info"><h3>Gallery</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="heart.jpg" alt="Heart"><div class="project-info"><h3>Heart Animation</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="card.jpg" alt="Card"><div class="project-info"><h3>Card Design</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="card2.jpg" alt="Card 2"><div class="project-info"><h3>Card Design 2</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="login.jpg" alt="Login"><div class="project-info"><h3>Login Form</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="background.jpg" alt="Background"><div class="project-info"><h3>Background Art</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="table.jpg" alt="Table"><div class="project-info"><h3>Table Layout</h3><a href="#" class="btn">View Project</a></div></div>
+      <div class="project-card"><img src="game.jpg" alt="Game"><div class="project-info"><h3>Mini Game</h3><a href="#" class="btn">View Project</a></div></div>
+    </div>
+  </section>
 
-        <p>
-            &copy; azizahussaini2004@gmail.com. All Rights Reserved.
-        </p>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <span class="eyebrow">What I Offer</span>
+    <h2>My Services</h2>
+    <p>I provide modern and responsive web development services.</p>
+    <div class="services-container">
+      <div class="service-card"><i class="fa-solid fa-pen-ruler"></i><h3>Web Design</h3><p>Creating modern, clean and attractive websites with professional layouts.</p></div>
+      <div class="service-card"><i class="fa-solid fa-mobile-screen"></i><h3>Responsive Design</h3><p>Building websites that work perfectly on desktop, tablet and mobile devices.</p></div>
+      <div class="service-card"><i class="fa-solid fa-layer-group"></i><h3>UI / UX Design</h3><p>Designing beautiful and user-friendly interfaces with excellent user experience.</p></div>
+      <div class="service-card"><i class="fa-solid fa-bolt"></i><h3>Landing Page Design</h3><p>Creating high-converting landing pages for businesses and personal brands.</p></div>
+    </div>
+  </section>
 
-        <div class="social-icons">
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <span class="eyebrow">Get In Touch</span>
+    <h2>Contact Me</h2>
+    <p>Feel free to send me a message.</p>
+    <form class="contact-container" onsubmit="return false;">
+      <div class="input-box">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i>Send Message</button>
+    </form>
+  </section>
 
-            <a href="#"><i class="fab fa-facebook"></i></a>
+</main>
 
-            <a href=""><i class="fab fa-linkedin"></i></a>
+<footer>
+  <div class="footer-email"><i class="fa-solid fa-envelope"></i> azizahussaini2004@gmail.com</div>
+  <div class="social-icons">
+    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/ghazaldominion" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto:azizahussaini2004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+  <p class="footer-note">© 2025 Aziza Hussaini. All Rights Reserved.</p>
+</footer>
 
-            <a href="#"><i class="fab fa-github"></i></a>
+<script>
+  // highlight active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      if (window.scrollY >= top) current = sec.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
 
-            <a href="https://www.instagram.com/ghazaldominion?igsh=MXRhOHNsNjl5M2JkeQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
-
-        </div>
-
-    </footer>
+  // simple theme toggle icon swap (decorative)
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-preview');
+    const icon = toggle.querySelector('i');
+    icon.classList.toggle('fa-moon');
+    icon.classList.toggle('fa-sun');
+  });
+</script>
 
 </body>
 </html>
